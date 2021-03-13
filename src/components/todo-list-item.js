@@ -14,10 +14,11 @@ export default class TodoListItem extends React.Component {
         const { task, isCompleted } = this.props;
 
         const taskStyle = {
-            color: isCompleted ? '#5cb85c' : '#d9534f',
+            // color: isCompleted ? '#5cb85c' : '#d9534f',
             cursor: 'pointer',
             textDecoration: isCompleted ? 'line-through' :'',
-            backgroundColor: '#d9edf7'
+            backgroundColor: isCompleted ? '#5cb85c' : '#d9534f',
+            color: 'black'
         };
 
         if (this.state.isEditing) {
